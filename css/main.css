@@ -54,13 +54,15 @@ h1 {
     margin: 20px;
     padding: 0;
     list-style-type: none; /* Eliminar puntos */
+    width: 100%;
 }
 
 .services li {
-    width: 100%; /* Asegura que cada elemento ocupe todo el ancho disponible */
+    width: 100%; /* Hace que cada botón ocupe todo el ancho disponible */
     margin-bottom: 20px;
 }
 
+/* Servicio (cada tarjeta de servicio) */
 .service {
     background-color: white;
     border-radius: 10px;
@@ -105,13 +107,13 @@ h1 {
     display: inline-block;
     background-color: var(--service-button-color);
     color: white;
-    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+    padding: 15px 20px; /* Ajusta el tamaño del padding para un buen tamaño */
     border-radius: 25px;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
-    width: 100%; /* Hace que los botones tengan el mismo tamaño */
+    width: 100%; /* Asegura que los botones ocupen todo el ancho disponible */
     text-align: center; /* Centra el texto */
 }
 
@@ -124,13 +126,13 @@ h1 {
     display: inline-block;
     background-color: var(--whatsapp-color);
     color: white;
-    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    padding: 15px 20px; /* Ajusta el tamaño del botón */
     border-radius: 25px;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
-    width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
     text-align: center; /* Centra el texto */
     margin-top: 20px;
 }
@@ -166,6 +168,7 @@ footer {
 
     .service-button,
     .whatsapp-button {
-        padding: 15px 30px; /* Aumenta el tamaño del botón en dispositivos móviles */
+        padding: 15px 20px; /* Ajusta el tamaño de los botones para pantallas pequeñas */
+        font-size: 16px; /* Mantiene un tamaño adecuado */
     }
 }
