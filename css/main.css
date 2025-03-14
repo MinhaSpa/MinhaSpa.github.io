@@ -52,6 +52,13 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
+    padding: 0;
+    list-style-type: none; /* Eliminar puntos */
+}
+
+.services li {
+    width: 100%; /* Asegura que cada elemento ocupe todo el ancho disponible */
+    margin-bottom: 20px;
 }
 
 .service {
@@ -60,10 +67,10 @@ h1 {
     box-shadow: var(--box-shadow);
     padding: 20px;
     margin: 10px;
-    width: 280px;
     text-align: center;
     border: 1px solid var(--accent-color);
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Ajusta el tamaño */
 }
 
 .service:hover {
@@ -98,13 +105,14 @@ h1 {
     display: inline-block;
     background-color: var(--service-button-color);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
     border-radius: 25px;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
-    margin-top: 20px;
+    width: 100%; /* Hace que los botones tengan el mismo tamaño */
+    text-align: center; /* Centra el texto */
 }
 
 .service-button:hover {
@@ -116,12 +124,14 @@ h1 {
     display: inline-block;
     background-color: var(--whatsapp-color);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
     border-radius: 25px;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto */
     margin-top: 20px;
 }
 
@@ -151,6 +161,11 @@ footer {
     }
     
     .service {
-        width: 90%;
+        width: 100%; /* Hace que los botones tengan el mismo tamaño */
+    }
+
+    .service-button,
+    .whatsapp-button {
+        padding: 15px 30px; /* Aumenta el tamaño del botón en dispositivos móviles */
     }
 }
