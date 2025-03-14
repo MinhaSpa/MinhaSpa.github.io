@@ -95,16 +95,18 @@ h1 {
 
 /* Estilo para los enlaces de servicios, transformados en botones */
 .service-button {
-    display: inline-block;
+    display: block; /* Hace que el botón ocupe todo el ancho del contenedor */
+    width: 100%; /* Hace que el botón tenga el mismo ancho que el contenedor */
     background-color: var(--service-button-color);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 0; /* Más padding para que los botones sean más grandes */
     border-radius: 25px;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
     margin-top: 20px;
+    text-align: center;
 }
 
 .service-button:hover {
@@ -113,16 +115,18 @@ h1 {
 
 /* Botón de WhatsApp */
 .whatsapp-button {
-    display: inline-block;
+    display: block; /* Hace que el botón ocupe todo el ancho del contenedor */
+    width: 100%; /* Hace que el botón tenga el mismo ancho que el contenedor */
     background-color: var(--whatsapp-color);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 0; /* Más padding para que el botón sea más grande */
     border-radius: 25px;
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     transition: background-color 0.3s;
     margin-top: 20px;
+    text-align: center;
 }
 
 .whatsapp-button:hover {
@@ -153,4 +157,11 @@ footer {
     .service {
         width: 90%;
     }
+}
+
+/* Eliminar los puntos en la lista */
+.services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
