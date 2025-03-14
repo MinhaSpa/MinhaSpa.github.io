@@ -27,7 +27,7 @@
 <script>
     document.getElementById('whatsapp-link').addEventListener('click', function(e) {
         e.preventDefault();
-        var message = 'Hola, me gustaría saber más sobre los tratamientos corporales.';
+        var message = 'Hola, me gustaría saber más sobre: ';
         var phoneNumber = '527354386066'; // Número de teléfono
         var url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
