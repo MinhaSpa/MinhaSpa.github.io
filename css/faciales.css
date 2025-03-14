@@ -53,13 +53,13 @@ h1 {
 
 .description {
     font-size: 14px;
-    color: #34495e;
+    color: #34495e; 
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #8e44ad;
+    background-color: #a46f4c;
     color: white;
 }
