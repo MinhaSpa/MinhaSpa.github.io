@@ -13,7 +13,6 @@ header {
     text-align: center;
 }
 
-
 h1 {
     margin: 0;
 }
@@ -54,7 +53,7 @@ h1 {
 
 .description {
     font-size: 14px;
-    color: #34495e;
+    color: #34495e; 
 }
 
 /* Footer */
