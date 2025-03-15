@@ -7,8 +7,8 @@
     --accent-color: #8c715a;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --whatsapp-color: #25D366;
-    --service-button-color: #6f4f1f; /* Color café para los botones de servicio */
-    --service-button-hover-color: #4e3b1f; /* Color café más oscuro al pasar el ratón */
+    --service-button-color: #d9b596; /* Color café para los botones de servicio */
+    --service-button-hover-color: #6f4f1f; /* Color café más oscuro al pasar el ratón */
 }
 
 /* Estilos globales */
@@ -132,7 +132,6 @@ h1 {
 .whatsapp-button:hover {
     background-color: #1ebe5d;
 }
-
 
 /* Footer */
 footer {
