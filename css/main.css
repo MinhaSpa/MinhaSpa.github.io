@@ -5,7 +5,7 @@
     --header-bg-color: #c2a08e;
     --text-color: #5a4d42;
     --accent-color: #8c715a;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     --whatsapp-color: #25D366;
     --service-button-color: #d9b596; /* Color café para los botones de servicio */
     --service-button-hover-color: #6f4f1f; /* Color café más oscuro al pasar el ratón */
@@ -131,6 +131,15 @@ h1 {
 
 .whatsapp-button:hover {
     background-color: #1ebe5d;
+}
+.payment-info {
+    background-color: var(--header-bg-color); /* O el color que desees */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 /* Footer */
