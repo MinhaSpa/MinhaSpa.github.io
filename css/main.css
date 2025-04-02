@@ -38,7 +38,7 @@ h1 {
 
 /* Contenedor principal */
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     background: white;
     padding: 20px;
@@ -131,15 +131,6 @@ h1 {
 
 .whatsapp-button:hover {
     background-color: #1ebe5d;
-}
-.payment-info {
-    background-color: var(--header-bg-color); /* O el color que desees */
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-    color: white;
-    margin-top: 20px;
-    font-weight: bold;
 }
 
 /* Footer */
