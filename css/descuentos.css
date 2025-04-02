@@ -41,7 +41,10 @@ h1 {
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 20px;
-    gap: 30px; /* Espacio uniforme entre elementos */
+    gap: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .service {
@@ -50,7 +53,7 @@ h1 {
     box-shadow: var(--box-shadow);
     padding: 20px;
     margin: 10px;
-    width: 300px;
+    width: 280px;
     text-align: center;
     border: 1px solid var(--accent-color);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -71,15 +74,15 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-/* Asegurar que precio y duración solo se muestren si tienen contenido */
-.price, .duration {
+.price {
     font-size: 18px;
     font-weight: bold;
     color: var(--text-color);
 }
 
-.price:empty, .duration:empty {
-    display: none;
+.duration {
+    font-size: 16px;
+    color: #7a6650;
 }
 
 .description {
@@ -97,6 +100,12 @@ footer {
 }
 
 /* Responsividad */
+@media (max-width: 1024px) {
+    .services {
+        justify-content: space-around;
+    }
+}
+
 @media (max-width: 768px) {
     .services {
         flex-direction: column;
@@ -105,5 +114,29 @@ footer {
     
     .service {
         width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .service {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .service h2 {
+        font-size: 20px;
+    }
+    
+    .price, .duration {
+        font-size: 16px;
+    }
+    
+    .description {
+        font-size: 13px;
     }
 }
