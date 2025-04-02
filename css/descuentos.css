@@ -1,32 +1,16 @@
-/* Fuentes y colores */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap');
-
-:root {
-    --main-bg-color: #f4f4f4;
-    --header-bg-color: #a46f4c;
-    --text-color: #34495e;
-    --accent-color: #a46f4c;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos globales */
+/* Estilo global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
-    text-align: center;
+    background-color: #f4f4f4;
 }
 
-/* Encabezado */
 header {
-    background-color: var(--header-bg-color);
+    background-color: #a46f4c;
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 h1 {
@@ -37,28 +21,22 @@ h1 {
 .services {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin: 20px;
+    flex-wrap: wrap;
 }
 
 .service {
     background-color: white;
     border-radius: 10px;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px;
     width: 280px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service h2 {
-    color: var(--accent-color);
+    color: #a46f4c;
     font-size: 24px;
 }
 
@@ -75,25 +53,13 @@ h1 {
 
 .description {
     font-size: 14px;
-    color: var(--text-color);
+    color: #34495e; 
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: var(--header-bg-color);
+    background-color: #a46f4c;
     color: white;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .service {
-        width: 90%;
-    }
 }
