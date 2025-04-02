@@ -38,7 +38,7 @@ h1 {
 .services {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: flex-start; /* Asegura que los elementos se alineen en la parte superior */
     flex-wrap: wrap;
     margin: 20px;
     gap: 20px; /* Agrega espacio uniforme entre elementos */
@@ -56,7 +56,7 @@ h1 {
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; /* Evita que los elementos se expandan demasiado */
     min-height: 320px; /* Ajusta la altura mínima para uniformidad */
 }
 
