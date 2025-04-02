@@ -38,8 +38,10 @@ h1 {
 .services {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     margin: 20px;
+    gap: 20px; /* Agrega espacio uniforme entre elementos */
 }
 
 .service {
@@ -52,6 +54,10 @@ h1 {
     text-align: center;
     border: 1px solid var(--accent-color);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px; /* Ajusta la altura mínima para uniformidad */
 }
 
 .service:hover {
