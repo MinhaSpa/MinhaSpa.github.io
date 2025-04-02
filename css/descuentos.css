@@ -37,11 +37,11 @@ h1 {
 /* Sección de servicios */
 .services {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start; /* Asegura que los elementos se alineen en la parte superior */
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin: 20px;
-    gap: 20px; /* Agrega espacio uniforme entre elementos */
+    gap: 30px; /* Espacio uniforme entre elementos */
 }
 
 .service {
@@ -50,14 +50,14 @@ h1 {
     box-shadow: var(--box-shadow);
     padding: 20px;
     margin: 10px;
-    width: 280px;
+    width: 300px;
     text-align: center;
     border: 1px solid var(--accent-color);
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Evita que los elementos se expandan demasiado */
-    min-height: 320px; /* Ajusta la altura mínima para uniformidad */
+    justify-content: flex-start;
+    min-height: 320px;
 }
 
 .service:hover {
@@ -71,15 +71,15 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 
-.price {
+/* Asegurar que precio y duración solo se muestren si tienen contenido */
+.price, .duration {
     font-size: 18px;
     font-weight: bold;
     color: var(--text-color);
 }
 
-.duration {
-    font-size: 16px;
-    color: #7a6650;
+.price:empty, .duration:empty {
+    display: none;
 }
 
 .description {
