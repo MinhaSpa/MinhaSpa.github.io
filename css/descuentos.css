@@ -60,21 +60,6 @@ h1 {
     color: #ffffff;
 }
 
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .sub {
-        font-size: 4vw; /* Ajuste de tamaño para pantallas más pequeñas */
-    }
-}
-
-/* Media query para pantallas grandes */
-@media (min-width: 1200px) {
-    .sub {
-        font-size: 1.5vw; /* Ajuste de tamaño para pantallas grandes */
-    }
-}
-
-
 /* Footer */
 footer {
     text-align: center;
