@@ -26,12 +26,12 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const whatsappLink = document.getElementById('whatsapp-link');
-            const phoneNumber = '527354386066';
-            const message = 'Hola, me gustaría agendar un servicio ';
-            whatsappLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        });
+        function sendWhatsApp(element) {
+            const phoneNumber = '527354386066'; // Cambia por tu número de WhatsApp
+            const message = element.getAttribute('data-message'); // Obtiene el mensaje único de cada tarjeta
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.location.href = url; // Redirige a WhatsApp
+        }
     </script>
   
 
