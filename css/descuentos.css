@@ -55,26 +55,10 @@ h1 {
     font-size: 14px;
     color: #34495e; 
 }
-.sub {
-    font-size: 2vw; /* El tamaño de la fuente se ajustará según el ancho de la ventana */
+.sub{
+    font-size: 16px;
     color: #ffffff;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .sub {
-        font-size: 4vw; /* Ajuste del tamaño para pantallas más pequeñas */
-    }
-}
-
-/* Media query para pantallas grandes */
-@media (min-width: 1200px) {
-    .sub {
-        font-size: 1.5vw; /* Ajuste del tamaño para pantallas grandes */
-    }
-}
-
 
 /* Footer */
 footer {
