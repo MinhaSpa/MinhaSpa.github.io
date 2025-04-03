@@ -20,20 +20,14 @@
         <h3>📍 <a href="https://www.google.com/maps/place/18%C2%B054'33.8%22N+98%C2%B057'24.2%22W/@18.9093742,-98.9592857,17z/data=!3m1!4b1!4m4!3m3!8m2!3d18.9093742!4d-98.9567108?entry=ttu&g_ep=EgoyMDI1MDMxMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">Dirección: Cascadas Cocoyoc Morelos</a></h3>
 
         <h3>📞 Contacto: 735-438-6066</h3>
-
-        <a href="#" id="whatsapp-link" class="whatsapp-button">💬 Contacto por WhatsApp</a>
+        <a href="#" id="whatsapp-link" class="whatsapp-button" onclick="sendWhatsApp(this)" data-message=" ¡Bienvenidos a Minha Spa! ¿Cómo podemos ayudarte hoy?">💬 Contacto por WhatsApp</a>
         <h3>✅ ¡Aceptamos pago con tarjeta! 💳</h3>
     </div>
 
-    <script>
-        function sendWhatsApp(element) {
-            const phoneNumber = '527354386066'; // Cambia por tu número de WhatsApp
-            const message = element.getAttribute('data-message'); // Obtiene el mensaje único de cada tarjeta
-            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.location.href = url; // Redirige a WhatsApp
-        }
-    </script>
+    
   
+</body>
+<script src="whatsapp.js"></script>
 
 </body>
 </html>
