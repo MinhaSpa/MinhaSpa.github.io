@@ -55,25 +55,6 @@ h1 {
     font-size: 14px;
     color: #34495e; 
 }
-.sub {
-    font-size: 2vw; /* El tamaño de la fuente se ajustará según el ancho de la ventana */
-    color: #ffffff;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-}
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .sub {
-        font-size: 4vw; /* Ajuste del tamaño para pantallas más pequeñas */
-    }
-}
-
-/* Media query para pantallas grandes */
-@media (min-width: 1200px) {
-    .sub {
-        font-size: 1.5vw; /* Ajuste del tamaño para pantallas grandes */
-    }
-}
 
 
 /* Footer */
@@ -82,4 +63,37 @@ footer {
     padding: 20px;
     background-color: #a46f4c;
     color: white;
+}
+.agenda-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #F5E1C0; /* Beige claro */
+    color: #5D4037; /* Marrón oscuro para el texto */
+    padding: 16px 0;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.agenda-button:hover {
+    background-color: #E3C7A1; /* Beige más oscuro */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.agenda-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-button:focus {
+    outline: 3px solid rgba(75, 157, 234, 0.5); /* Asegura accesibilidad */
+    outline-offset: 2px;
 }
